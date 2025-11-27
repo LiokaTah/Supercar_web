@@ -18,13 +18,7 @@
     </form>
     <a href="inscription.php">Creer un nouveau compte</a>
     <?php
-    if (isset($_GET['error'])){
-        if($_GET['error']==1){
-            ?>
-            <div class="alert alert-danger" role="alert">
-  Veuillez trou
-</div>
- <?php 
+   
         }
         
           }
