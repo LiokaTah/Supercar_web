@@ -1,4 +1,3 @@
-
 const supercars = [
     { id: 1, marque: 'Ferrari', modele: 'SF90 Stradale', prix: 507000, annee: 2020, imageUrl: 'https://news.dupontregistry.com/wp-content/uploads/2025/04/download-2025-07-24T144813.052.jpeg' },
     { id: 2, marque: 'Lamborghini', modele: 'Aventador SVJ', prix: 517770, annee: 2018, imageUrl: 'https://www.asphalte.ch/news/wp-content/uploads/2019/03/Lamborghini-Aventador-SVJ-Roadster-750.jpg' },
