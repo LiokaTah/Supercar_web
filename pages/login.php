@@ -27,7 +27,21 @@
                 </div>
                 
                 <div class="form-container">
-                    
+                    <?php if(isset($_GET['error'])): ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <?php 
+                if($_GET['error'] == 1) {
+                    echo "Mot de passe incorrect.";
+                } elseif($_GET['error'] == 2) {
+                    echo "Cet email n'existe pas.";
+                } else {
+                    echo "Une erreur est survenue.";
+                }
+            ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php endif; ?>
                     <form method="POST" action="../traitement/traitement_connexion.php">
                         <div class="form-group">
                             <label for="email" class="form-label">Email</label>

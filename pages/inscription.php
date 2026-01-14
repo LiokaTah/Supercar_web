@@ -17,6 +17,7 @@
     <?php 
         include './gauche.php'; 
     ?>
+    
         <!-- Section droite avec formulaire -->
         <div class="right-section">
             <div class="signup-container">
@@ -158,7 +159,7 @@
 
     <!-- Bootstrap JS -->
     <script>
-        // Toggle pour afficher/masquer le mot de passe
+       
         document.getElementById('togglePassword').addEventListener('click', function() {
             const passwordInput = document.getElementById('password');
             const toggleIcon = document.getElementById('toggleIcon');
@@ -174,7 +175,7 @@
             }
         });
         
-        // Vérification de la force du mot de passe
+       
         document.getElementById('password').addEventListener('input', function() {
             const password = this.value;
             const strengthMeter = document.getElementById('strengthMeter');
@@ -233,8 +234,6 @@
                     car.style.transform = 'scale(1) translateY(0)';
                 }, 100);
             });
-            
-            // Animation pour le logo et tagline
             const logo = document.querySelector('.superar-logo');
             const tagline = document.querySelector('.tagline');
             
@@ -253,8 +252,6 @@
                 tagline.style.transform = 'translateY(0)';
             }, 300);
         });
-        
-        // Effet de survol sur les cars
         document.querySelectorAll('.car').forEach(car => {
             car.addEventListener('mouseenter', function() {
                 const overlay = this.querySelector('.car-overlay');
@@ -271,25 +268,28 @@
             });
         });
         
-        // Validation du formulaire (front-end seulement)
+
         document.getElementById('signupForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('confirm_password').value;
-            
-            // Vérification simple des mots de passe
-            if (password !== confirmPassword) {
-                alert('Les mots de passe ne correspondent pas.');
-                return;
-            }
-            
-            // Si tout est bon, simuler une inscription réussie
-            alert('Inscription réussie ! Redirection vers la page de connexion...');
-            setTimeout(() => {
-                window.location.href = 'connexion.php';
-            }, 1500);
-        });
+    // 1. On empêche l'envoi immédiat pour faire les vérifications
+    e.preventDefault();
+    
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm_password').value;
+    
+    
+    if (password !== confirmPassword) {
+        alert('Les mots de passe ne correspondent pas.');
+        return; // On arrête tout ici
+    }
+    
+    // 3. Si tout est bon, on affiche l'alerte
+    alert('Inscription en cours... validation de vos données.');
+
+    // 4. AU LIEU de window.location.href, on utilise submit() !
+    // Cela envoie le formulaire proprement vers l'action définie (traitement_inscription.php)
+    // avec toutes les données en méthode POST.
+    this.submit(); 
+});
     </script>
 </body>
 </html>

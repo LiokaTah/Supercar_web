@@ -6,13 +6,13 @@ $pwd = $_POST['password'];
 $pwds = $_POST['confirm_password'];
 
 $nom = $_POST['last_name'];
-$prenom = $_POST['first-name'];
+$prenom = $_POST['first_name'];
 $contact = $_POST['contact'];
-$statut = $_POST['statut'];
+$statut = $_POST['status'];
 
 if($pwd == $pwds){
-$requete = "INSERT INTO Utilisateurs(Nom, Prenom,Mot_de_passe,Contact,Email, Statut) 
-            VALUES ('$nom', '$prenom', '$pwd', '$contact', 'email',$statut)";
+$requete = "INSERT INTO utilisateurs(Nom,Prenom,Mot_de_passe,Contact,Email, Statut) 
+            VALUES ('$nom', '$prenom', '$pwd', '$contact', '$email','$statut')";
             mysqli_query($bdd, $requete);
             header("Location:../pages/login.php");
 
