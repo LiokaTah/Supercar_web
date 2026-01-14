@@ -13,7 +13,7 @@
 <body>
     
     <div class="main-container">
-        <!-- Section gauche  -->
+        
         <?php 
         include './gauche.php'; 
         ?>

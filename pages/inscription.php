@@ -118,14 +118,14 @@
                             <label class="form-label">Statut</label>
                             <div class="status-options-horizontal">
                                 <div class="status-option-horizontal">
-                                    <input type="radio" id="status_admin_h" name="status" value="admin" required>
+                                    <input type="radio" id="status_admin_h" name="status" value="Admin" required>
                                     <label for="status_admin_h" class="status-label-horizontal">
                                         <i class="fas fa-user-shield me-2"></i>
                                         Admin
                                     </label>
                                 </div>
                                 <div class="status-option-horizontal">
-                                    <input type="radio" id="status_client_h" name="status" value="client" required>
+                                    <input type="radio" id="status_client_h" name="status" value="Client" required>
                                     <label for="status_client_h" class="status-label-horizontal">
                                         <i class="fas fa-user me-2"></i>
                                         Client
