@@ -18,7 +18,7 @@ $requete = "INSERT INTO Utilisateurs(Nom, Prenom, Email, mdp, Contact, Statut)
 
 }
 else{
-    header("Location:inscription.php?mdperror");
+    header("Location:../pages/inscription.php");
     exit();
 }
 

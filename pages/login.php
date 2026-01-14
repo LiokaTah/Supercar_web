@@ -10,77 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supercar</title>
 </head>
-<body></body>
+<body>
+    
     <div class="main-container">
         <!-- Section gauche  -->
-        <div class="left-section">
-            <div class="supercar-background">
-                <!-- cars supercar simulés -->
-                <div class="car">
-                    <div class="car-overlay">
-                        <div class="car-title">Golf</div>
-                        <div class="car-author">Volkswagen</div>
-                    </div>
-                </div>
-                
-                <div class="car">
-                    <div class="car-overlay">
-                        <div class="car-title">A3</div>
-                        <div class="car-author">Audi</div>
-                    </div>
-                </div>
-                
-                <div class="car">
-                    <div class="car-overlay">
-                        <div class="car-title">Série 5</div>
-                        <div class="car-author">BMW</div>
-                    </div>
-                </div>
-                
-                <div class="car">
-                    <div class="car-overlay">
-                        <div class="car-title">Class A</div>
-                        <div class="car-author">Mercedez-Benz</div>
-                    </div>
-                </div>
-                
-                <div class="car">
-                    <div class="car-overlay">
-                        <div class="car-title">911</div>
-                        <div class="car-author">Porche</div>
-                    </div>
-                </div>
-                
-                <div class="car">
-                    <div class="car-overlay">
-                        <div class="car-title">Clio</div>
-                        <div class="car-author">Renault</div>
-                    </div>
-                </div>
-                
-                <div class="car">
-                    <div class="car-overlay">
-                        <div class="car-title">106</div>
-                        <div class="car-author">Peugeot</div>
-                    </div>
-                </div>
-                
-                <div class="car">
-                    <div class="car-overlay">
-                        <div class="car-title">Berlingo</div>
-                        <div class="car-author">Citroen</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="supercar-logo">
-                <i class="fab fa-supercar"></i> Supercar
-            </div>
-            
-            <div class="tagline">
-                Trouvez votre voiture de rêve chez Supercar
-            </div>
-        </div>
+        <?php 
+        include './gauche.php'; 
+        ?>
         
         <!-- Section droite avec formulaire -->
         <div class="right-section">
@@ -91,47 +27,8 @@
                 </div>
                 
                 <div class="form-container">
-                    <?php
-                    // Traitement PHP du formulaire
-                    $error = '';
-                    $success = '';
                     
-                    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                        $email = trim($_POST['email'] ?? '');
-                        $password = $_POST['password'] ?? '';
-                        
-                        // Validation
-                        if (empty($email) || empty($password)) {
-                            $error = 'Veuillez remplir tous les champs.';
-                        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                            $error = 'Veuillez entrer une adresse email valide.';
-                        } else {
-                            // Simulation de connexion
-                            if ($email === 'demo@supercar.com' && $password === 'supercar123') {
-                                $success = 'Connexion réussie! Redirection en cours...';
-                            } else {
-                                $error = 'Email ou mot de passe incorrect.';
-                            }
-                        }
-                    }
-                    
-                    // Affichage des messages
-                    if ($error) {
-                        echo '<div class="alert alert-danger alert-dismissible fade show" role="alert" style="border-radius: 16px; margin-bottom: 20px;">';
-                        echo '<i class="fas fa-exclamation-circle me-2"></i>' . $error;
-                        echo '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
-                        echo '</div>';
-                    }
-                    
-                    if ($success) {
-                        echo '<div class="alert alert-success alert-dismissible fade show" role="alert" style="border-radius: 16px; margin-bottom: 20px;">';
-                        echo '<i class="fas fa-check-circle me-2"></i>' . $success;
-                        echo '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
-                        echo '</div>';
-                    }
-                    ?>
-                    
-                    <form method="POST" action="">
+                    <form method="POST" action="../traitement/traitement_connexion.php">
                         <div class="form-group">
                             <label for="email" class="form-label">Email</label>
                             <input 
@@ -141,7 +38,7 @@
                                 class="form-control" 
                                 placeholder="Email" 
                                 required
-                                value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>"
+                                value=""
                             >
                         </div>
                         
@@ -167,11 +64,11 @@
                     </form>
                     
                     <div class="terms">
-                        <p>En continuant, vous acceptez les <a href="#">Conditions d'utilisation</a> de Supercar et reconnaissez avoir lu notre <a href="#">Politique de confidentialité</a>.</p>
+                        <p>En continuant, vous acceptez les <a href="conditions.php">Conditions d'utilisation</a> de Supercar et reconnaissez avoir lu notre <a href="politiques.php">Politique de confidentialité</a>.</p>
                     </div>
                     
-                    <div class="signup-section">
-                        <p><a href="inscription.php" class="signup-link">Vous n'avez psa encore de compte?</a></p>
+                    <div class="login-link">
+                        Pas de compte ? <a href="inscription.php">S'inscrire</a>
                     </div>
                 </div>
             </div>
@@ -180,29 +77,6 @@
 
     <!-- Bootstrap JS -->
     <script>
-        // Toggle pour afficher/masquer le mot de passe
-        document.getElementById('togglePassword').addEventListener('click', function() {
-            const passwordInput = document.getElementById('password');
-            const toggleIcon = document.getElementById('toggleIcon');
-            
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                toggleIcon.classList.remove('fa-eye');
-                toggleIcon.classList.add('fa-eye-slash');
-            } else {
-                passwordInput.type = 'password';
-                toggleIcon.classList.remove('fa-eye-slash');
-                toggleIcon.classList.add('fa-eye');
-            }
-        });
-        
-        // Simulation de redirection après connexion réussie
-        <?php if ($success): ?>
-        setTimeout(function() {
-            window.location.href = 'tableau-de-bord.php';
-        }, 1500);
-        <?php endif; ?>
-        
         // Animation des cars au chargement
         document.addEventListener('DOMContentLoaded', function() {
             const cars = document.querySelectorAll('.car');
