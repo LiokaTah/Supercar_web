@@ -7,13 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
-            --sc-green: #4CAF50; /* Vert du logo */
-            --sc-gray: #333333;  /* Gris du logo */
+            --sc-green: #4CAF50; 
+            --sc-gray: #333333;  
         }
 
         body { font-family: 'Segoe UI', sans-serif; }
 
-        /* NAVBAR personnalisée selon vos instructions */
         .navbar { background-color: white; border-bottom: 4px solid var(--sc-green); }
         .nav-link { 
             color: var(--sc-gray) !important; 
@@ -22,7 +21,7 @@
         }
         .nav-link:hover { color: var(--sc-green) !important; }
 
-        /* CARROUSEL AUTOMATIQUE */
+        
         .carousel-item {
             height: 500px;
             background-color: var(--sc-gray);
@@ -30,7 +29,7 @@
         .carousel-item img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Garde les proportions des photos */
+            object-fit: cover; 
             opacity: 0.8;
         }
         .carousel-caption {
@@ -49,7 +48,7 @@
     </style>
 </head>
 <body>
-
+<a href="../traitement/deconnexion.php">Se deconnecter</a>
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">

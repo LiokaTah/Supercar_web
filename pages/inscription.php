@@ -13,12 +13,11 @@
 </head>
 <body>
     <div class="main-container">
-        <!-- Section gauche avec cars Superar -->
+       
     <?php 
         include './gauche.php'; 
     ?>
     
-        <!-- Section droite avec formulaire -->
         <div class="right-section">
             <div class="signup-container">
                 <div class="signup-header">
@@ -38,6 +37,27 @@
                                 required
                             >
                         </div>
+                        <div class="form-container">
+    <?php if(isset($_GET['error'])): ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <?php 
+                if($_GET['error'] == 1) {
+                    echo "Mot de passe incorrect.";
+                } elseif($_GET['error'] == 2) {
+                    echo "Cet email n'existe pas.";
+                } elseif($_GET['error'] == 3) {
+                    // Nouveau message d'alerte
+                    echo "Cette adresse email est déjà utilisée par un autre compte.";
+                } else {
+                    echo "Une erreur est survenue.";
+                }
+            ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php endif; ?>
+    
+    </div>
                         
                         <div class="form-group">
                             <label for="password" class="form-label">Mot de passe</label>

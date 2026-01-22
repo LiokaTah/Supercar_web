@@ -18,7 +18,7 @@
         include './gauche.php'; 
         ?>
         
-        <!-- Section droite avec formulaire -->
+        
         <div class="right-section">
             <div class="login-container">
                 <div class="login-header">
@@ -89,9 +89,9 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
+    
     <script>
-        // Animation des cars au chargement
+     
         document.addEventListener('DOMContentLoaded', function() {
             const cars = document.querySelectorAll('.car');
             cars.forEach((car, index) => {
@@ -105,7 +105,7 @@
                 }, 100);
             });
             
-            // Animation pour le logo et tagline
+            
             const logo = document.querySelector('.supercar-logo');
             const tagline = document.querySelector('.tagline');
             

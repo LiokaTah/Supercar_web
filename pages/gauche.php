@@ -1,6 +1,6 @@
 <div class="left-section">
             <div class="supercar-background">
-                <!-- cars supercar simulés -->
+                
                 <div class="car">
                     <div class="car-overlay">
                         <div class="car-title">Golf</div>
