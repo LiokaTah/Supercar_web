@@ -504,7 +504,7 @@
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contacter-nous</a></li>
                     <li class="nav-item"><a class="nav-link" href="#policies">Politiques</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cars">Voitures</a></li>
+                    <li class="nav-item"><a class="nav-link" href="voiture.php">Voitures</a></li>
                     <li class="nav-item ms-3">
                         <a class="btn-logout" href="../traitement/deconnexion.php">
                             <i class="bi bi-box-arrow-right"></i> Se déconnecter
@@ -527,7 +527,7 @@
             <div class="carousel-inner">
                 <!-- Japon -->
                 <div class="carousel-item active">
-                    <img src="photo_japon.jpg" alt="Marque Japonaise">
+                    <img src="../image/image.avif" alt="Marque Japonaise">
                     <div class="carousel-caption">
                         <h5 class="brand-label">PROVENANCE : JAPON</h5>
                         <h2>Découvrez nos modèles Toyota & Honda</h2>
@@ -538,7 +538,7 @@
 
                 <!-- Allemagne -->
                 <div class="carousel-item">
-                    <img src="photo_allemagne.jpg" alt="Marque Allemande">
+                    <img src="../image/image.avif" alt="Marque Allemande">
                     <div class="carousel-caption">
                         <h5 class="brand-label">PROVENANCE : ALLEMAGNE</h5>
                         <h2>Le prestige de BMW & Mercedes-Benz</h2>
@@ -549,7 +549,7 @@
 
                 <!-- France -->
                 <div class="carousel-item">
-                    <img src="photo_france.jpg" alt="Marque Française">
+                    <img src="../image/image.avif" alt="Marque Française">
                     <div class="carousel-caption">
                         <h5 class="brand-label">PROVENANCE : FRANCE</h5>
                         <h2>Élégance avec Peugeot & Renault</h2>

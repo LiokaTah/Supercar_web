@@ -10,7 +10,7 @@
 
     <header>
         <div class="logo-container">
-           <img src="images/supercar_originale-removebg-preview.png" alt="." class="logo">
+           <img src="../image/supercar_originale-removebg-preview.png" alt="." class="logo">
            
         </div>
     </header>
