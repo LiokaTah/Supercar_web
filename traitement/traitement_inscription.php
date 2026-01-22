@@ -19,7 +19,7 @@ if (mysqli_num_rows($check_result) > 0) {
     exit();
 } else {
     if ($pwd == $pwds) {
-        $requete = "INSERT INTO utilisateurs(Nom,Prenom,Mot_de_passe,Contact,Email, Statut) 
+        $requete = "INSERT INTO utilisateurs(Nom,Prenom,Mot_de_passe,Contact,Email,Statut) 
             VALUES ('$nom', '$prenom', '$pwd', '$contact', '$email','$statut')";
         mysqli_query($bdd, $requete);
         header("Location:../pages/login.php");
