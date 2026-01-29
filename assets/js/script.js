@@ -12,11 +12,18 @@ const supercars = [
      { id: 11, marque: 'Nissan', modele: 'Qashqai', prix: 300000, pays: 'États-Unis', annee: 2009, imageUrl: 'https://images.caradisiac.com/logos-ref/modele/modele--nissan-qashqai/S6-modele--nissan-qashqai.jpg' },
      { id: 12, marque: 'Chevrolet', modele: 'Cruze', prix: 180000, pays: 'Japon', annee: 2017, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNASo_DxjBJh1lmwhedNPotvwJmzg2CdcOzw&s' },
      { id: 13, marque: 'Suzuki', modele: 'XL7', prix: 500000, pays: 'Japon', annee: 2009, imageUrl: 'https://images.autoboom.co.il/2uNW8ZNlt2T8pjFd22JeGnEf2tvLyLkUsP4PE0D2M20/fit/1800/1800/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xNTgvMTU4NTc2LmpwZw.webp' },
-     { id: 12, marque: 'Toyota', modele: 'Sienna', prix: 130000, pays: 'Japon', annee: 2009, imageUrl: 'https://i.gaw.to/vehicles/photos/01/12/011234_2009_Toyota_Sienna.jpg?1024x640' },
-     { id: 13, marque: 'Nissan', modele: 'Altima', prix: 195000, pays: 'Japon', annee: 2011, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qcekfF8yTV5JowhHgotWsNSykoJzKl9p4g&s' },
-     { id: 13, marque: 'Suzuki', modele: 'Jimny', prix: 110000, pays: 'Etats Unis', annee: 2002, imageUrl: 'https://assets.carandclassic.com/uploads/cars/suzuki/C1872948/2002-suzuki-jimny-13-jlx-82-680f47a88e2ed.jpg?fit=fillmax&h=800&ixlib=php-4.1.0&q=85&w=800&s=d41e4aad0da8745e8721ac4d2b8c2f76' },
-     { id: 12, marque: 'Toyota', modele: 'RAV4', prix: 225000, pays: 'Japon', annee: 2009, imageUrl: 'https://i.gaw.to/vehicles/photos/01/12/011234_2009_Toyota_Sienna.jpg?1024x640https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdMa-4O_2-6pKcIxZuxNIXbVFmeIyPnfgeqw&s' },
-     { id: 13, marque: 'Nissan', modele: 'Armada', prix: 300000, pays: 'Japon', annee: 2011, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEtLztjEbOdZfz1_A5fgzXIHxLJ8FPrHj3-w&s' },
+    
+
+
+         // je v encore ajouter d'autre (vs inquietez pas hihi);
+    { id: 14, marque: 'Nissan', modele: 'Altima', prix: 195000, pays: 'Japon', annee: 2011, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qcekfF8yTV5JowhHgotWsNSykoJzKl9p4g&s' },
+    { id: 15, marque: 'Suzuki', modele: 'Jimny', prix: 110000, pays: 'Etats Unis', annee: 2002, imageUrl: 'https://assets.carandclassic.com/uploads/cars/suzuki/C1872948/2002-suzuki-jimny-13-jlx-82-680f47a88e2ed.jpg?fit=fillmax&h=800&ixlib=php-4.1.0&q=85&w=800&s=d41e4aad0da8745e8721ac4d2b8c2f76' },
+    { id: 16, marque: 'Toyota', modele: 'RAV4', prix: 225000, pays: 'Japon', annee: 2009, imageUrl: 'https://i.gaw.to/vehicles/photos/01/12/011234_2009_Toyota_Sienna.jpg?1024x640https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdMa-4O_2-6pKcIxZuxNIXbVFmeIyPnfgeqw&s' },
+    { id: 17, marque: 'Nissan', modele: 'Armada', prix: 300000, pays: 'Japon', annee: 2011, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEtLztjEbOdZfz1_A5fgzXIHxLJ8FPrHj3-w&s' },
+    { id: 18, marque: 'Nissan', modele: 'Altima', prix: 195000, pays: 'Japon', annee: 2011, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_qcekfF8yTV5JowhHgotWsNSykoJzKl9p4g&s' },
+    { id: 19, marque: 'Suzuki', modele: 'Jimny', prix: 110000, pays: 'Etats Unis', annee: 2002, imageUrl: 'https://assets.carandclassic.com/uploads/cars/suzuki/C1872948/2002-suzuki-jimny-13-jlx-82-680f47a88e2ed.jpg?fit=fillmax&h=800&ixlib=php-4.1.0&q=85&w=800&s=d41e4aad0da8745e8721ac4d2b8c2f76' },
+    { id: 20, marque: 'Toyota', modele: 'RAV4', prix: 225000, pays: 'Japon', annee: 2009, imageUrl: 'https://i.gaw.to/vehicles/photos/01/12/011234_2009_Toyota_Sienna.jpg?1024x640https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdMa-4O_2-6pKcIxZuxNIXbVFmeIyPnfgeqw&s' },
+    { id: 21, marque: 'Nissan', modele: 'Armada', prix: 300000, pays: 'Japon', annee: 2011, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEtLztjEbOdZfz1_A5fgzXIHxLJ8FPrHj3-w&s' },
 ];
 
 
