@@ -648,7 +648,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="supercar_originale-removebg-preview.png" alt="SuperCar" class="footer-logo">
+                    <img src="../image/supercar_originale-removebg-preview.png" alt="SuperCar" class="footer-logo">
                     <p>Votre partenaire automobile de confiance depuis 2009, offrant les meilleurs véhicules neufs avec un service exceptionnel.</p>
                     
                     <div class="social-icons">
@@ -683,7 +683,7 @@
             </div>
             
             <div class="copyright">
-                <p>© 2025-2027 SuperCar-Web - MCCI Business School[cite: 1, 6]. Tous droits réservés.</p>
+                <p>© 2025-2027 SuperCar-Web - MCCI Business School. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
