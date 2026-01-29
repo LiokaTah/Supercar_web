@@ -17,8 +17,10 @@ CREATE TABLE Voiture(
    Prix DECIMAL(10,2) NOT NULL,  
    EstVendu BOOLEAN NOT NULL DEFAULT FALSE,  
    Origine VARCHAR(50) NOT NULL,
-   Annee_Sortie YEAR,  
-   Image VARCHAR(255),  
+   Annee_Sortie YEAR, 
+   Type_voiture VARCHAR(50),
+   Place INT, 
+   Img VARCHAR(255),  
    PRIMARY KEY(ID_Voiture)
 );
 
